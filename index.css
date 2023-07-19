@@ -53,9 +53,9 @@ ul {
 /* utility classes */
 
 .container {
-  /* border: 1px solid black; */
   max-width: 1180px;
   margin-inline: auto;
+  overflow: hidden;
   /* padding-inline: var(--padding-inline-section); */
 }
 
@@ -92,6 +92,7 @@ ul {
   color: white !important;
   transition: 0.2s ease-out;
   box-shadow: 0 0 2px var(--secondary-text-color);
+  text-align: center;
 }
 
 .primary-button:hover {
@@ -106,6 +107,7 @@ ul {
   padding: 12px 24px;
   color: var(--primary-text-color) !important;
   transition: 0.2s ease-out;
+  text-align: center;
 }
 
 .secondary-button:hover {
@@ -131,6 +133,7 @@ ul {
 .main-nav {
   justify-content: space-between;
   margin-top: 20px;
+  position: relative;
 }
 
 .company-logo img {
@@ -152,6 +155,10 @@ ul {
 .nav-links ul {
   justify-content: end;
   gap: 40px;
+}
+
+.nav-toogle {
+  display: none;
 }
 
 /* header section */
@@ -180,7 +187,7 @@ header {
 }
 
 .header-right img {
-  width: 600px;
+  width: 100%;
 }
 
 /* compnaies section */
@@ -194,7 +201,8 @@ header {
 
 .companies-logo {
   margin-top: 30px;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
@@ -252,6 +260,10 @@ header {
   gap: 30px;
 }
 
+#second-big-feature {
+  flex-direction: row-reverse;
+}
+
 .left-feature img {
   width: 100%;
 }
@@ -307,13 +319,15 @@ header {
 
 .example-area {
   margin-top: 20px;
+  margin-inline: 20px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .example-card {
   width: 23%;
   position: relative;
-  min-height: 300px;
+  height: 300px;
   transition: 0.2s ease-out;
 }
 
@@ -382,6 +396,7 @@ footer {
 .footer-container {
   align-items: flex-start;
   justify-content: space-between;
+  padding-inline: 20px;
 }
 
 .link-column {
@@ -400,4 +415,5 @@ footer {
 .subfooter-container {
   justify-content: center;
   gap: 30px;
+  flex-wrap: wrap;
 }
